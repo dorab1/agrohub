@@ -26,7 +26,7 @@ export default function HomePage() {
       <section
         className="relative min-h-[92vh] flex flex-col justify-center pt-32 pb-24 px-6 md:px-12 lg:px-24 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(15,17,8,0) 0%, rgba(15,17,8,0.1) 40%, rgba(27,48,34,0.6) 80%, #1B3022 100%), url('${base}assets/farm_bg.jpeg')`,
+          backgroundImage: `linear-gradient(to bottom, rgba(15,17,8,0) 0%, rgba(15,17,8,0.1) 40%, rgba(27,48,34,0.6) 80%, #1B3022 100%), url('${base}assets/hero.jpg')`,
         }}
       >
         <div className="relative z-20 max-w-5xl">
