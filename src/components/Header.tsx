@@ -27,13 +27,13 @@ export default function Header() {
           referrerPolicy="no-referrer"
           onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
         />
-        <span className="font-sans font-bold uppercase text-xs md:text-sm tracking-widest text-[#E8E6D9] leading-none">
+        <span className="font-sans font-bold uppercase text-xs tracking-widest text-[#E8E6D9] leading-none">
           Агрохаб 2026
         </span>
       </Link>
 
       {/* десктоп-навигация */}
-      <nav className="hidden md:flex items-center gap-8 text-[11px] uppercase tracking-widest font-sans font-bold">
+      <nav className="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest font-sans font-bold">
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end={n.end} className={linkClass}>
             {n.label}
@@ -46,7 +46,7 @@ export default function Header() {
           href={APPLY_FORM}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-block py-2.5 px-5 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-[11px] tracking-widest rounded-full hover:bg-white transition-all active:scale-95"
+          className="hidden sm:inline-block py-2.5 px-5 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white transition-all active:scale-95"
         >
           Подать заявку
         </a>
@@ -69,7 +69,7 @@ export default function Header() {
               end={n.end}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `py-3 uppercase text-sm tracking-widest font-sans font-bold border-b border-[#E8E6D9]/5 ${
+                `py-3 uppercase text-xs tracking-widest font-sans font-bold border-b border-[#E8E6D9]/5 ${
                   isActive ? "text-[#D4DE72]" : "text-[#E8E6D9]/90"
                 }`
               }

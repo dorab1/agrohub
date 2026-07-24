@@ -40,7 +40,7 @@ export default function ApplyPage() {
             {INFO.map((x) => (
               <div key={x.title} className={`${card} p-6`}>
                 <h3 className="font-sans font-bold uppercase text-base text-[#E8E6D9] mb-2">{x.title}</h3>
-                <p className="text-sm text-[#E8E6D9]/70 leading-relaxed">{x.desc}</p>
+                <p className="text-base text-[#E8E6D9]/70 leading-relaxed">{x.desc}</p>
               </div>
             ))}
           </section>
@@ -57,10 +57,10 @@ export default function ApplyPage() {
               />
             </div>
             <div className="mt-5 flex flex-col sm:flex-row gap-4">
-              <a href={APPLY_FORM} target="_blank" rel="noopener noreferrer" className="py-4 px-8 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white transition-all text-center">
+              <a href={APPLY_FORM} target="_blank" rel="noopener noreferrer" className="py-4 px-8 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-sm tracking-widest rounded-full hover:bg-white transition-all text-center">
                 Открыть форму в новой вкладке
               </a>
-              <a href={TG_CHANNEL} target="_blank" rel="noopener noreferrer" className="py-4 px-8 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-xs tracking-widest rounded-full transition-all text-center">
+              <a href={TG_CHANNEL} target="_blank" rel="noopener noreferrer" className="py-4 px-8 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-sm tracking-widest rounded-full transition-all text-center">
                 Задать вопрос в Telegram
               </a>
             </div>
@@ -73,8 +73,8 @@ export default function ApplyPage() {
               {CONTACTS.map((c) => (
                 <div key={c.role} className="p-5 md:px-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                   <div>
-                    <div className="font-sans font-bold uppercase text-[11px] tracking-widest text-[#A3B18A]">{c.role}</div>
-                    <div className="text-sm text-[#E8E6D9] mt-0.5">{c.name}</div>
+                    <div className="font-sans font-bold uppercase text-sm tracking-widest text-[#A3B18A]">{c.role}</div>
+                    <div className="text-base text-[#E8E6D9] mt-0.5">{c.name}</div>
                   </div>
                   {c.phone && (
                     <a href={`tel:${c.phone.replace(/[^+\d]/g, "")}`} className="font-sans font-semibold text-sm text-[#D4DE72] whitespace-nowrap hover:underline">
@@ -98,7 +98,7 @@ export default function ApplyPage() {
                       onClick={() => setActiveFaq(isOpen ? null : item.id)}
                       className="w-full p-5 text-left flex justify-between items-center hover:bg-[#344E41]/20 transition-all"
                     >
-                      <span className="font-sans font-bold uppercase text-sm sm:text-base text-[#E8E6D9]">{item.question}</span>
+                      <span className="font-sans font-bold uppercase text-base sm:text-lg text-[#E8E6D9]">{item.question}</span>
                       <ChevronDown className={`w-4 h-4 text-[#A3B18A] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
                     </button>
                     <AnimatePresence initial={false}>
@@ -110,7 +110,7 @@ export default function ApplyPage() {
                           transition={{ duration: 0.25 }}
                           className="overflow-hidden"
                         >
-                          <div className="p-5 pt-0 border-t border-[#E8E6D9]/5 text-xs sm:text-sm text-[#E8E6D9]/75 leading-relaxed">
+                          <div className="p-5 pt-0 border-t border-[#E8E6D9]/5 text-base text-[#E8E6D9]/75 leading-relaxed">
                             {item.answer}
                           </div>
                         </motion.div>

@@ -36,7 +36,7 @@ export default function ProgramPage() {
             <a
               href={`${base}${PROGRAM_DOCX}`}
               download
-              className="inline-flex items-center gap-2 py-3 px-6 border border-[#E8E6D9]/25 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-[11px] tracking-widest rounded-full transition-colors"
+              className="inline-flex items-center gap-2 py-3 px-6 border border-[#E8E6D9]/25 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-sm tracking-widest rounded-full transition-colors"
             >
               <Download className="w-4 h-4" /> Скачать программу (.docx)
             </a>
@@ -49,7 +49,7 @@ export default function ProgramPage() {
               {PRINCIPLES.map((p) => (
                 <div key={p.title} className={`${card} p-5`}>
                   <h3 className="font-sans font-bold uppercase text-sm text-[#E8E6D9] mb-2 leading-tight">{p.title}</h3>
-                  <p className="text-xs sm:text-sm text-[#E8E6D9]/70 leading-relaxed">{p.desc}</p>
+                  <p className="text-base text-[#E8E6D9]/70 leading-relaxed">{p.desc}</p>
                 </div>
               ))}
             </div>
@@ -62,7 +62,7 @@ export default function ProgramPage() {
               {EDUCATION_BLOCKS.map((e, i) => (
                 <div key={e} className={`${card} p-5 flex gap-4 items-start`}>
                   <span className="font-sans font-black text-[#D4DE72] shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="text-sm text-[#E8E6D9]/85 leading-relaxed">{e}</span>
+                  <span className="text-base text-[#E8E6D9]/85 leading-relaxed">{e}</span>
                 </div>
               ))}
             </div>
@@ -74,11 +74,11 @@ export default function ProgramPage() {
             <div className="grid md:grid-cols-2 gap-4">
               {ROBOTS.map((r) => (
                 <div key={r.name} className={`${card} p-6`}>
-                  <span className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A]">{r.tag}</span>
+                  <span className="font-sans font-bold text-sm uppercase tracking-widest text-[#A3B18A]">{r.tag}</span>
                   <h3 className="font-sans font-bold uppercase text-lg text-[#E8E6D9] mt-1 mb-4">{r.name}</h3>
                   <ul className="space-y-2">
                     {r.points.map((p) => (
-                      <li key={p} className="text-sm text-[#E8E6D9]/75 leading-relaxed flex gap-2.5">
+                      <li key={p} className="text-base text-[#E8E6D9]/75 leading-relaxed flex gap-2.5">
                         <span className="text-[#D4DE72]">•</span>{p}
                       </li>
                     ))}
@@ -120,8 +120,8 @@ export default function ProgramPage() {
                             <div className="px-5 pb-5 pt-1 border-t border-[#E8E6D9]/5 space-y-2">
                               {d.schedule.map(([time, act]) => (
                                 <div key={time + act} className="flex gap-4 items-baseline">
-                                  <span className="font-sans font-bold text-xs text-[#A3B18A] shrink-0 w-24 md:w-28">{time}</span>
-                                  <span className="text-sm text-[#E8E6D9]/80 leading-relaxed">{act}</span>
+                                  <span className="font-sans font-bold text-sm text-[#A3B18A] shrink-0 w-24 md:w-28">{time}</span>
+                                  <span className="text-base text-[#E8E6D9]/80 leading-relaxed">{act}</span>
                                 </div>
                               ))}
                             </div>
@@ -142,8 +142,8 @@ export default function ProgramPage() {
               <div className={`${card} p-6 space-y-2.5`}>
                 {DAY_SCHEDULE.map(([t, a]) => (
                   <div key={t + a} className="flex gap-4 items-baseline">
-                    <span className="font-sans font-bold text-xs text-[#D4DE72] shrink-0 w-24">{t}</span>
-                    <span className="text-sm text-[#E8E6D9]/80">{a}</span>
+                    <span className="font-sans font-bold text-sm text-[#D4DE72] shrink-0 w-24">{t}</span>
+                    <span className="text-base text-[#E8E6D9]/80">{a}</span>
                   </div>
                 ))}
               </div>
@@ -152,14 +152,14 @@ export default function ProgramPage() {
             <section>
               <h2 className={h2}>Хакатон 72 часа</h2>
               <div className={`${card} p-6`}>
-                <p className="text-sm text-[#E8E6D9]/80 leading-relaxed mb-5">
+                <p className="text-base text-[#E8E6D9]/80 leading-relaxed mb-5">
                   Марафон разработки: команды создают рабочие прототипы роботизированных решений для АПК.
                   Среди победителей разыгрывается призовой фонд.
                 </p>
-                <p className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A] mb-3">Критерии оценки</p>
+                <p className="font-sans font-bold text-sm uppercase tracking-widest text-[#A3B18A] mb-3">Критерии оценки</p>
                 <ul className="space-y-2">
                   {HACKATHON_CRITERIA.map((c) => (
-                    <li key={c} className="text-sm text-[#E8E6D9]/75 leading-relaxed flex gap-2.5">
+                    <li key={c} className="text-base text-[#E8E6D9]/75 leading-relaxed flex gap-2.5">
                       <span className="text-[#D4DE72]">•</span>{c}
                     </li>
                   ))}
@@ -169,10 +169,10 @@ export default function ProgramPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/apply" className="py-4 px-10 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white transition-all text-center">
+            <Link to="/apply" className="py-4 px-10 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-sm tracking-widest rounded-full hover:bg-white transition-all text-center">
               Подать заявку
             </Link>
-            <Link to="/results" className="py-4 px-10 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-xs tracking-widest rounded-full transition-all text-center">
+            <Link to="/results" className="py-4 px-10 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-sm tracking-widest rounded-full transition-all text-center">
               Результаты смен
             </Link>
           </div>

@@ -70,7 +70,7 @@ export default function ResultsPage() {
             ].map(([n, l]) => (
               <div key={l} className={`${card} p-6 text-center`}>
                 <div className="font-sans font-black uppercase text-2xl md:text-3xl text-[#D4DE72] leading-none mb-2">{n}</div>
-                <div className="text-xs text-[#E8E6D9]/70 leading-snug">{l}</div>
+                <div className="text-base text-[#E8E6D9]/70 leading-snug">{l}</div>
               </div>
             ))}
           </section>
@@ -89,13 +89,13 @@ export default function ResultsPage() {
                   className={`${card} p-6 md:p-7 grid md:grid-cols-[1fr_1fr] gap-5 md:gap-8`}
                 >
                   <div>
-                    <span className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A]">Проект {i + 1}</span>
+                    <span className="font-sans font-bold text-sm uppercase tracking-widest text-[#A3B18A]">Проект {i + 1}</span>
                     <h3 className="font-sans font-bold uppercase text-lg text-[#E8E6D9] mt-1 mb-2 leading-tight">{p.project}</h3>
-                    <p className="text-sm text-[#E8E6D9]/75 leading-relaxed">{p.result}</p>
+                    <p className="text-base text-[#E8E6D9]/75 leading-relaxed">{p.result}</p>
                   </div>
                   <div className="md:border-l md:border-[#E8E6D9]/10 md:pl-8 flex flex-col justify-center">
-                    <p className="font-serif italic text-base text-[#E8E6D9] leading-relaxed">{p.review}</p>
-                    <span className="mt-3 text-[11px] uppercase tracking-widest font-bold text-[#A3B18A]">{p.author}</span>
+                    <p className="font-sans text-base text-[#E8E6D9]/85 leading-relaxed">{p.review}</p>
+                    <span className="mt-3 text-sm uppercase tracking-widest font-bold text-[#A3B18A]">{p.author}</span>
                   </div>
                 </motion.div>
               ))}
@@ -103,7 +103,7 @@ export default function ResultsPage() {
           </section>
 
           <div className="flex justify-center">
-            <a href={`${base}assets/projects.xlsx`} download className="py-4 px-10 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-xs tracking-widest rounded-full transition-all text-center">
+            <a href={`${base}assets/projects.xlsx`} download className="py-4 px-10 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-sm tracking-widest rounded-full transition-all text-center">
               Посмотреть остальные проекты
             </a>
           </div>
@@ -125,7 +125,7 @@ export default function ResultsPage() {
                   </div>
                   <div className="absolute bottom-0 inset-x-0 p-6 z-10">
                     <h3 className="font-sans font-bold uppercase text-lg text-[#E8E6D9]">{g.subtitle}</h3>
-                    <p className="text-[11px] uppercase tracking-widest font-sans font-bold text-[#D4DE72] mt-1">Смотреть</p>
+                    <p className="text-sm uppercase tracking-widest font-sans font-bold text-[#D4DE72] mt-1">Смотреть</p>
                   </div>
                 </div>
               ))}
@@ -142,11 +142,11 @@ export default function ResultsPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-xs text-[#E8E6D9]/45">Фотоотчёты со смен пополняются после каждого заезда.</p>
+            <p className="mt-4 text-base text-[#E8E6D9]/45">Фотоотчёты со смен пополняются после каждого заезда.</p>
           </section>
 
           <div className="flex justify-center">
-            <Link to="/apply" className="py-4 px-10 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white transition-all text-center">
+            <Link to="/apply" className="py-4 px-10 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-sm tracking-widest rounded-full hover:bg-white transition-all text-center">
               Подать заявку на смену
             </Link>
           </div>

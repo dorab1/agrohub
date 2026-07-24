@@ -12,9 +12,9 @@ const reveal = {
 };
 
 const primaryBtn =
-  "py-4 px-8 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white hover:scale-[1.02] transition-all text-center inline-block";
+  "py-4 px-8 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-sm tracking-widest rounded-full hover:bg-white hover:scale-[1.02] transition-all text-center inline-block";
 const ghostBtn =
-  "py-4 px-8 bg-transparent border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 hover:bg-[#E8E6D9]/5 text-[#E8E6D9] font-semibold uppercase text-xs tracking-widest rounded-full transition-all text-center inline-block";
+  "py-4 px-8 bg-transparent border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 hover:bg-[#E8E6D9]/5 text-[#E8E6D9] font-semibold uppercase text-sm tracking-widest rounded-full transition-all text-center inline-block";
 const sectionH2 = "section-heading";
 
 const STATUS_LABEL: Record<string, string> = {
@@ -71,7 +71,7 @@ function ShiftMediaStrip({ media, base }: { media: ShiftMedia[]; base: string })
             />
           )}
           {m.label && (
-            <span className="absolute bottom-2 left-2 py-1 px-2.5 rounded-full bg-[#0F1108]/70 backdrop-blur-sm text-[11px] uppercase tracking-widest font-bold text-[#E8E6D9]/90">
+            <span className="absolute bottom-2 left-2 py-1 px-2.5 rounded-full bg-[#0F1108]/70 backdrop-blur-sm text-sm uppercase tracking-widest font-bold text-[#E8E6D9]/90">
               {m.label}
             </span>
           )}
@@ -96,7 +96,7 @@ export default function HomePage() {
         }}
       >
         <div className="relative z-20 max-w-5xl">
-          <p className="font-sans font-bold uppercase text-xs sm:text-sm tracking-[0.25em] text-[#D4DE72] mb-5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
+          <p className="font-sans font-bold uppercase text-sm tracking-[0.25em] text-[#D4DE72] mb-5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
             АгроХаб 2026 · Истринская сыроварня
           </p>
           <h1 className="font-sans font-black uppercase text-4xl sm:text-6xl md:text-[56px] tracking-tighter leading-[0.9] mb-8 text-[#E8E6D9] drop-shadow-[0_2px_14px_rgba(0,0,0,0.55)]">
@@ -104,7 +104,7 @@ export default function HomePage() {
           </h1>
 
           <div className="max-w-2xl mb-8">
-            <p className="text-sm sm:text-base text-[#E8E6D9] leading-relaxed font-sans font-medium drop-shadow-sm">
+            <p className="text-base sm:text-lg text-[#E8E6D9] leading-relaxed font-sans font-medium drop-shadow-sm">
               Программируй роботов-андроидов, дрессируй робособак, собирай автономные тележки и
               обучай нейросети на действующей ферме в Истре. От идеи до рабочего прототипа — за
               одну смену.
@@ -118,7 +118,7 @@ export default function HomePage() {
 
           <div className="inline-flex items-center gap-3 rounded-full bg-[#0F1108]/55 backdrop-blur-sm border border-[#D4DE72]/40 py-2.5 px-5">
             <span className="w-2 h-2 rounded-full bg-[#D4DE72] animate-pulse shrink-0" />
-            <span className="text-xs sm:text-sm font-semibold text-[#E8E6D9]">
+            <span className="text-sm font-semibold text-[#E8E6D9]">
               Ближайшие смены: 9–19 и 19–29 августа · набор открыт
             </span>
           </div>
@@ -132,20 +132,20 @@ export default function HomePage() {
       {/* ── Миссия ── */}
       <section className="relative pt-24 md:pt-32 pb-20 md:pb-28 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#1B3022]/58 to-[#0F1108]/58">
         <div className="max-w-7xl mx-auto">
-          <motion.p {...reveal} transition={{ duration: 0.6 }} className="font-sans font-bold text-[11px] uppercase tracking-[0.25em] text-[#A3B18A] mb-6">
+          <motion.p {...reveal} transition={{ duration: 0.6 }} className="font-sans font-bold text-sm uppercase tracking-[0.25em] text-[#A3B18A] mb-6">
             Зачем мы это делаем
           </motion.p>
           <motion.h2 {...reveal} transition={{ duration: 0.6, delay: 0.05 }} className="font-serif italic text-2xl sm:text-3xl md:text-4xl text-[#E8E6D9] leading-snug max-w-4xl mb-6">
             {MISSION_TEXT.lead}
           </motion.h2>
-          <motion.p {...reveal} transition={{ duration: 0.6, delay: 0.1 }} className="text-sm md:text-base text-[#E8E6D9]/80 leading-relaxed max-w-3xl mb-10">
+          <motion.p {...reveal} transition={{ duration: 0.6, delay: 0.1 }} className="text-base text-[#E8E6D9]/80 leading-relaxed max-w-3xl mb-10">
             {MISSION_TEXT.body}
           </motion.p>
           <motion.div {...reveal} transition={{ duration: 0.6, delay: 0.15 }} className="flex flex-wrap gap-2.5">
             {MISSION_TECH.map((t) => (
               <span
                 key={t}
-                className="py-2 px-4 rounded-full border border-[#A3B18A]/35 bg-[#344E41]/20 text-xs sm:text-sm font-semibold text-[#E8E6D9]/90"
+                className="py-2 px-4 rounded-full border border-[#A3B18A]/35 bg-[#344E41]/20 text-sm font-semibold text-[#E8E6D9]/90"
               >
                 {t}
               </span>
@@ -161,7 +161,7 @@ export default function HomePage() {
             <motion.h2 {...reveal} transition={{ duration: 0.6 }} className={sectionH2}>
               График смен
             </motion.h2>
-            <p className="mt-4 text-xs md:text-sm text-[#E8E6D9]/80 leading-relaxed font-medium">
+            <p className="mt-4 text-base text-[#E8E6D9]/80 leading-relaxed font-medium">
               Лето 2026: пять смен, каждая со своей миссией — от первых шагов андроида до полного
               автономного цикла «теплица → магазин» без участия человека.
             </p>
@@ -202,7 +202,7 @@ export default function HomePage() {
                       </span>
                       <span className="text-sm font-semibold text-[#E8E6D9]/70">{s.dates}</span>
                       <span
-                        className={`py-1 px-3 rounded-full text-[11px] uppercase tracking-widest font-bold ${
+                        className={`py-1 px-3 rounded-full text-sm uppercase tracking-widest font-bold ${
                           isOpen
                             ? "bg-[#D4DE72] text-[#0F1108]"
                             : isNow
@@ -216,16 +216,16 @@ export default function HomePage() {
                     <h3 className="font-sans font-bold uppercase text-base md:text-lg text-[#E8E6D9] mb-2 leading-tight">
                       {s.title}
                     </h3>
-                    <p className={`text-sm leading-relaxed ${isOpen || isNow ? "text-[#E8E6D9]/85" : "text-[#E8E6D9]/60"}`}>
+                    <p className={`text-base leading-relaxed ${isOpen || isNow ? "text-[#E8E6D9]/85" : "text-[#E8E6D9]/60"}`}>
                       {s.story}
                     </p>
                     {s.media && <ShiftMediaStrip media={s.media} base={base} />}
                     {isOpen && (
                       <div className="mt-5 flex flex-wrap gap-3">
-                        <Link to="/apply" className="py-3 px-6 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-[11px] tracking-widest rounded-full hover:bg-white transition-all">
+                        <Link to="/apply" className="py-3 px-6 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-sm tracking-widest rounded-full hover:bg-white transition-all">
                           Подать заявку на смену
                         </Link>
-                        <Link to="/program" className="py-3 px-6 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-[11px] tracking-widest rounded-full transition-all">
+                        <Link to="/program" className="py-3 px-6 border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 text-[#E8E6D9] font-semibold uppercase text-sm tracking-widest rounded-full transition-all">
                           Программа
                         </Link>
                       </div>
@@ -254,7 +254,7 @@ export default function HomePage() {
               >
                 <div className="font-sans font-black text-[#D4DE72] text-lg mb-3">0{i + 1}</div>
                 <h3 className="font-sans font-bold uppercase text-base md:text-lg text-[#E8E6D9] mb-2 leading-tight">{b.title}</h3>
-                <p className="text-xs sm:text-sm text-[#E8E6D9]/70 leading-relaxed">{b.desc}</p>
+                <p className="text-base text-[#E8E6D9]/70 leading-relaxed">{b.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -268,18 +268,18 @@ export default function HomePage() {
             <motion.h2 {...reveal} transition={{ duration: 0.6 }} className={sectionH2}>
               Кто нам нужен
             </motion.h2>
-            <p className="mt-4 text-xs md:text-sm text-[#E8E6D9]/80 leading-relaxed font-medium">
+            <p className="mt-4 text-base text-[#E8E6D9]/80 leading-relaxed font-medium">
               Ждём студентов, аспирантов и готовые команды со всей страны — не только из аграрных
               вузов.
             </p>
             <div className="mt-5 flex flex-wrap gap-2.5">
-              <span className="py-2 px-4 rounded-full bg-[#D4DE72] text-[#0F1108] text-xs sm:text-sm font-bold uppercase tracking-wide">
+              <span className="py-2 px-4 rounded-full bg-[#D4DE72] text-[#0F1108] text-sm font-bold uppercase tracking-wide">
                 Участие бесплатное
               </span>
-              <span className="py-2 px-4 rounded-full border border-[#A3B18A]/45 bg-[#344E41]/25 text-xs sm:text-sm font-semibold text-[#E8E6D9]/90">
+              <span className="py-2 px-4 rounded-full border border-[#A3B18A]/45 bg-[#344E41]/25 text-sm font-semibold text-[#E8E6D9]/90">
                 Проживание в палаточном лагере на ферме
               </span>
-              <span className="py-2 px-4 rounded-full border border-[#A3B18A]/45 bg-[#344E41]/25 text-xs sm:text-sm font-semibold text-[#E8E6D9]/90">
+              <span className="py-2 px-4 rounded-full border border-[#A3B18A]/45 bg-[#344E41]/25 text-sm font-semibold text-[#E8E6D9]/90">
                 Питание и снаряжение — от организатора
               </span>
             </div>
@@ -294,7 +294,7 @@ export default function HomePage() {
                 className="bg-[#344E41]/15 border border-[#E8E6D9]/10 rounded-2xl p-6 hover:border-[#A3B18A]/35 transition-colors"
               >
                 <h3 className="font-sans font-bold uppercase text-base md:text-lg text-[#E8E6D9] mb-2 leading-tight">{w.title}</h3>
-                <p className="text-xs sm:text-sm text-[#E8E6D9]/70 leading-relaxed">{w.desc}</p>
+                <p className="text-base text-[#E8E6D9]/70 leading-relaxed">{w.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -308,7 +308,7 @@ export default function HomePage() {
             </h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
               {WE_PROVIDE.map((p) => (
-                <li key={p} className="flex items-start gap-3 text-xs sm:text-sm text-[#E8E6D9]/85 leading-relaxed">
+                <li key={p} className="flex items-start gap-3 text-base text-[#E8E6D9]/85 leading-relaxed">
                   <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#D4DE72]" />
                   {p}
                 </li>
@@ -347,7 +347,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/10" />
                 <div className="absolute bottom-0 inset-x-0 p-6 z-10">
                   <h3 className="font-sans font-bold uppercase text-xl md:text-2xl text-[#E8E6D9] mb-2">{c.title}</h3>
-                  <p className="text-sm text-[#E8E6D9]/85 leading-relaxed">{c.desc}</p>
+                  <p className="text-base text-[#E8E6D9]/85 leading-relaxed">{c.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -362,7 +362,7 @@ export default function HomePage() {
             <motion.h2 {...reveal} transition={{ duration: 0.6 }} className="font-sans font-bold uppercase text-3xl md:text-5xl text-[#DAD7CD]">
               АгроХаб — это надолго
             </motion.h2>
-            <p className="mt-4 text-xs md:text-sm text-[#E8E6D9]/80 leading-relaxed font-medium">
+            <p className="mt-4 text-base text-[#E8E6D9]/80 leading-relaxed font-medium">
               Летние смены — только начало. Мы делаем постоянную площадку, где технологии
               приземляются в реальное сельское хозяйство.
             </p>
@@ -377,7 +377,7 @@ export default function HomePage() {
               >
                 <div className="font-sans font-black text-[#D4DE72] text-lg mb-3">0{i + 1}</div>
                 <h3 className="font-sans font-bold uppercase text-base md:text-lg text-[#E8E6D9] mb-2 leading-tight">{f.title}</h3>
-                <p className="text-xs sm:text-sm text-[#E8E6D9]/70 leading-relaxed">{f.desc}</p>
+                <p className="text-base text-[#E8E6D9]/70 leading-relaxed">{f.desc}</p>
               </motion.div>
             ))}
           </div>

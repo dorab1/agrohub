@@ -14,7 +14,7 @@ export default function PageHero({
     <section className="relative pt-36 md:pt-44 pb-12 md:pb-16 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#1B3022]/58 to-[#0F1108]/58 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {eyebrow && (
-          <p className="font-sans font-bold text-[11px] uppercase tracking-[0.25em] text-[#A3B18A] mb-4">
+          <p className="font-sans font-bold text-sm uppercase tracking-[0.25em] text-[#A3B18A] mb-4">
             {eyebrow}
           </p>
         )}
@@ -27,7 +27,7 @@ export default function PageHero({
           {title}
         </motion.h1>
         {subtitle && (
-          <p className="mt-6 max-w-2xl text-sm sm:text-base text-[#E8E6D9]/80 leading-relaxed">
+          <p className="mt-6 max-w-2xl text-base sm:text-lg text-[#E8E6D9]/80 leading-relaxed">
             {subtitle}
           </p>
         )}

@@ -4,6 +4,11 @@
 @theme {
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  --color-bg: #0F1108;
+  --color-text: #E8E6D9;
+  --color-accent: #D4DE72;
+  --color-green: #A3B18A;
+  --color-card: #344E41;
 }
 
 @utility btn-primary {
@@ -16,6 +21,36 @@
 
 @utility section-heading {
   @apply font-sans font-black uppercase text-3xl sm:text-5xl md:text-[48px] tracking-tighter leading-[0.85] text-[#E8E6D9];
+}
+
+@utility card {
+  @apply bg-[#344E41]/15 border border-[#E8E6D9]/10 rounded-2xl;
+}
+
+@utility eyebrow {
+  @apply font-sans font-bold uppercase text-[11px] tracking-[0.25em] text-[#A3B18A];
+}
+
+/* App background — extracted from inline style in App.tsx */
+.app-bg {
+  background-color: var(--color-bg);
+  background-size: 300px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Hero overlay gradient — extracted from inline style in HomePage.tsx */
+.hero-overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(15, 17, 8, 0) 0%,
+    rgba(15, 17, 8, 0.1) 40%,
+    rgba(27, 48, 34, 0.6) 80%,
+    #1B3022 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @keyframes marquee {
