@@ -24,7 +24,7 @@ export default function App() {
       className="min-h-screen text-[#E8E6D9] font-sans overflow-x-clip selection:bg-[#A3B18A]/30 selection:text-[#E8E6D9]"
       style={{
         backgroundColor: "#0F1108",
-        backgroundImage: `linear-gradient(rgba(15,17,8,0.46), rgba(15,17,8,0.46)), url(${base}assets/fields_bg.jpg)`,
+        backgroundImage: `linear-gradient(rgba(15,17,8,0.28), rgba(15,17,8,0.28)), url(${base}assets/fields_bg.jpg)`,
         backgroundSize: "300px",
         backgroundRepeat: "repeat",
         backgroundAttachment: "fixed",
