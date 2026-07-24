@@ -18,7 +18,7 @@ export default function Header() {
     `transition-colors ${isActive ? "text-[#D4DE72]" : "text-[#E8E6D9]/80 hover:text-[#E8E6D9]"}`;
 
   return (
-    <header className="absolute top-0 left-0 z-50 w-full bg-transparent border-b border-[#E8E6D9]/10 py-3.5 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
+    <header className="absolute top-0 left-0 z-50 w-full bg-[#0F1108]/80 backdrop-blur-md border-b border-[#E8E6D9]/10 py-3.5 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
       <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
         <img
           src={`${base}assets/cheese_logo.png`}
@@ -46,7 +46,7 @@ export default function Header() {
           href={APPLY_FORM}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-block py-2.5 px-5 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-[9px] tracking-widest rounded-full hover:bg-white transition-all active:scale-95"
+          className="hidden sm:inline-block py-2.5 px-5 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-[11px] tracking-widest rounded-full hover:bg-white transition-all active:scale-95"
         >
           Подать заявку
         </a>

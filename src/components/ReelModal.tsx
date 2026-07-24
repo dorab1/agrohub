@@ -99,7 +99,7 @@ export default function ReelModal({
         <div className="w-full md:w-2/5 shrink-0 p-4 pr-14 md:p-8 md:pr-8 border-b md:border-b-0 md:border-r border-[#E8E6D9]/10 flex flex-col md:justify-between bg-[#1B3022]/10">
           <div>
             {gallery.subtitle && (
-              <span className="font-sans font-bold text-[10px] uppercase tracking-widest text-[#A3B18A]">
+              <span className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A]">
                 {gallery.subtitle}
               </span>
             )}
@@ -150,13 +150,13 @@ export default function ReelModal({
               href="https://forms.yandex.ru/u/6a4b9a481f1eb5002fd7c9f3"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-2.5 md:py-3 px-6 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-[10px] tracking-widest rounded-full hover:bg-white transition-all text-center block shadow-md"
+              className="w-full py-2.5 md:py-3 px-6 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-[11px] tracking-widest rounded-full hover:bg-white transition-all text-center block shadow-md"
             >
               Подать заявку
             </a>
             <button
               onClick={onClose}
-              className="hidden md:block w-full py-3 px-6 bg-transparent border border-[#E8E6D9]/20 hover:border-[#E8E6D9]/40 text-[#E8E6D9] font-semibold uppercase text-[10px] tracking-widest rounded-full transition-all text-center"
+              className="hidden md:block w-full py-3 px-6 bg-transparent border border-[#E8E6D9]/20 hover:border-[#E8E6D9]/40 text-[#E8E6D9] font-semibold uppercase text-[11px] tracking-widest rounded-full transition-all text-center"
             >
               Закрыть
             </button>

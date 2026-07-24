@@ -22,7 +22,7 @@ export default function PageHero({
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-sans font-black uppercase text-4xl sm:text-6xl md:text-[72px] tracking-tighter leading-[0.85] text-[#E8E6D9]"
+          className="font-sans font-black uppercase text-4xl sm:text-6xl md:text-[56px] tracking-tighter leading-[0.85] text-[#E8E6D9]"
         >
           {title}
         </motion.h1>

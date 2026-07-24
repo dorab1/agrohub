@@ -19,13 +19,13 @@ export default function Footer() {
           </span>
         </Link>
 
-        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] uppercase tracking-widest font-sans font-bold text-[#E8E6D9]/50">
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-widest font-sans font-bold text-[#E8E6D9]/50">
           <Link to="/program" className="hover:text-[#E8E6D9]">Программа</Link>
           <Link to="/results" className="hover:text-[#E8E6D9]">Результаты смен</Link>
           <Link to="/apply" className="hover:text-[#E8E6D9]">Подать заявку</Link>
         </nav>
 
-        <span className="text-[10px] uppercase tracking-widest font-sans font-bold text-[#E8E6D9]/40 text-center">
+        <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-[#E8E6D9]/40 text-center">
           Истринская сыроварня Олега и Татьяны Сироты
         </span>
       </div>

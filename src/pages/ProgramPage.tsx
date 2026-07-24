@@ -74,7 +74,7 @@ export default function ProgramPage() {
             <div className="grid md:grid-cols-2 gap-4">
               {ROBOTS.map((r) => (
                 <div key={r.name} className={`${card} p-6`}>
-                  <span className="font-sans font-bold text-[10px] uppercase tracking-widest text-[#A3B18A]">{r.tag}</span>
+                  <span className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A]">{r.tag}</span>
                   <h3 className="font-sans font-bold uppercase text-lg text-[#E8E6D9] mt-1 mb-4">{r.name}</h3>
                   <ul className="space-y-2">
                     {r.points.map((p) => (
@@ -156,7 +156,7 @@ export default function ProgramPage() {
                   Марафон разработки: команды создают рабочие прототипы роботизированных решений для АПК.
                   Среди победителей разыгрывается призовой фонд.
                 </p>
-                <p className="font-sans font-bold text-[10px] uppercase tracking-widest text-[#A3B18A] mb-3">Критерии оценки</p>
+                <p className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A] mb-3">Критерии оценки</p>
                 <ul className="space-y-2">
                   {HACKATHON_CRITERIA.map((c) => (
                     <li key={c} className="text-sm text-[#E8E6D9]/75 leading-relaxed flex gap-2.5">

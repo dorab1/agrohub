@@ -30,7 +30,7 @@ export default function PartnersCarousel() {
                 className="max-h-8 md:max-h-10 w-auto object-contain drop-shadow-[0_1px_5px_rgba(0,0,0,0.7)]"
               />
               <div className="hidden lg:block leading-tight">
-                <div className="text-[9px] uppercase tracking-widest text-[#D4DE72] font-bold">
+                <div className="text-[11px] uppercase tracking-widest text-[#D4DE72] font-bold">
                   {p.role}
                 </div>
                 <div className="text-[11px] text-[#E8E6D9] font-semibold whitespace-nowrap">

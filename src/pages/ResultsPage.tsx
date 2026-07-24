@@ -89,7 +89,7 @@ export default function ResultsPage() {
                   className={`${card} p-6 md:p-7 grid md:grid-cols-[1fr_1fr] gap-5 md:gap-8`}
                 >
                   <div>
-                    <span className="font-sans font-bold text-[10px] uppercase tracking-widest text-[#A3B18A]">Проект {i + 1}</span>
+                    <span className="font-sans font-bold text-[11px] uppercase tracking-widest text-[#A3B18A]">Проект {i + 1}</span>
                     <h3 className="font-sans font-bold uppercase text-lg text-[#E8E6D9] mt-1 mb-2 leading-tight">{p.project}</h3>
                     <p className="text-sm text-[#E8E6D9]/75 leading-relaxed">{p.result}</p>
                   </div>
@@ -125,7 +125,7 @@ export default function ResultsPage() {
                   </div>
                   <div className="absolute bottom-0 inset-x-0 p-6 z-10">
                     <h3 className="font-sans font-bold uppercase text-lg text-[#E8E6D9]">{g.subtitle}</h3>
-                    <p className="text-[10px] uppercase tracking-widest font-sans font-bold text-[#D4DE72] mt-1">Смотреть</p>
+                    <p className="text-[11px] uppercase tracking-widest font-sans font-bold text-[#D4DE72] mt-1">Смотреть</p>
                   </div>
                 </div>
               ))}

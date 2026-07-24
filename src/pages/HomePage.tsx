@@ -15,8 +15,7 @@ const primaryBtn =
   "py-4 px-8 bg-[#E8E6D9] text-[#0F1108] font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white hover:scale-[1.02] transition-all text-center inline-block";
 const ghostBtn =
   "py-4 px-8 bg-transparent border border-[#E8E6D9]/30 hover:border-[#E8E6D9]/60 hover:bg-[#E8E6D9]/5 text-[#E8E6D9] font-semibold uppercase text-xs tracking-widest rounded-full transition-all text-center inline-block";
-const sectionH2 =
-  "font-sans font-black uppercase text-3xl sm:text-5xl md:text-[60px] tracking-tighter leading-[0.85] text-[#E8E6D9]";
+const sectionH2 = "section-heading";
 
 const STATUS_LABEL: Record<string, string> = {
   done: "Проведена",
@@ -72,7 +71,7 @@ function ShiftMediaStrip({ media, base }: { media: ShiftMedia[]; base: string })
             />
           )}
           {m.label && (
-            <span className="absolute bottom-2 left-2 py-1 px-2.5 rounded-full bg-[#0F1108]/70 backdrop-blur-sm text-[10px] uppercase tracking-widest font-bold text-[#E8E6D9]/90">
+            <span className="absolute bottom-2 left-2 py-1 px-2.5 rounded-full bg-[#0F1108]/70 backdrop-blur-sm text-[11px] uppercase tracking-widest font-bold text-[#E8E6D9]/90">
               {m.label}
             </span>
           )}
@@ -100,7 +99,7 @@ export default function HomePage() {
           <p className="font-sans font-bold uppercase text-xs sm:text-sm tracking-[0.25em] text-[#D4DE72] mb-5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
             АгроХаб 2026 · Истринская сыроварня
           </p>
-          <h1 className="font-sans font-black uppercase text-4xl sm:text-6xl md:text-[72px] tracking-tighter leading-[0.9] mb-8 text-[#E8E6D9] drop-shadow-[0_2px_14px_rgba(0,0,0,0.55)]">
+          <h1 className="font-sans font-black uppercase text-4xl sm:text-6xl md:text-[56px] tracking-tighter leading-[0.9] mb-8 text-[#E8E6D9] drop-shadow-[0_2px_14px_rgba(0,0,0,0.55)]">
             Строим сельское хозяйство будущего
           </h1>
 
@@ -203,7 +202,7 @@ export default function HomePage() {
                       </span>
                       <span className="text-sm font-semibold text-[#E8E6D9]/70">{s.dates}</span>
                       <span
-                        className={`py-1 px-3 rounded-full text-[10px] uppercase tracking-widest font-bold ${
+                        className={`py-1 px-3 rounded-full text-[11px] uppercase tracking-widest font-bold ${
                           isOpen
                             ? "bg-[#D4DE72] text-[#0F1108]"
                             : isNow
